@@ -15,11 +15,13 @@
  * SORT_NATURAL   : compare items as strings using "natural ordering" like natsort()
  * SORT_FLAG_CASE : can be combined (bitwise OR) with SORT_STRING or SORT_NATURAL to sort strings case-insensitively
  */
-const SORT_REGULAR   = 0
-const SORT_NUMERIC   = 1 // 001
-const SORT_STRING    = 2 // 010
-const SORT_NATURAL   = 6 // 110 (includes bits of SORT_STRING)
-const SORT_FLAG_CASE = 8
+const {
+	SORT_REGULAR, 
+	SORT_NUMERIC, // b001
+	SORT_STRING,  // b010
+	SORT_NATURAL, // b110 (includes bits of SORT_STRING)
+	SORT_FLAG_CASE,
+} = require('../lib/const');
 
 const sort = (ar, flags=SORT_REGULAR)=>{
 	const cmp_ = (a,b, flags_) => {

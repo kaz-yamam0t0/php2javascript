@@ -7,12 +7,8 @@
  * @param string character
  * @return int
  */
-const _utf32to8 = (c)=>{
-	if (c <= 0xFF)   return [c]
-	if (c <= 0x7FF)  return [ (0xC0 | (c>>6)), (0x80 | (c&0x3F)) ]
-	if (c <= 0xFFFF) return [ (0xE0 | (c>>12)), (0x80 | ((c>>6)&0x3F) ), (0x80 | (c&0x3F)),]
-	                 return [ (0xF0 | (c>>18)), (0x80 | ((c>>12)&0x3F)), (0x80 | ((c>>6)&0x3F) ), (0x80 | (c&0x3F)), ]
-}
+ const { utf32to8 } = require('../lib/util');
+
 
 const ord = (c)=>{
 	// if the first letter is utf16, convert it to utf8 and extract the first char code
@@ -23,7 +19,7 @@ const ord = (c)=>{
 		code = 0x10000 + (code - 0xD800)*0x400 + (low_ - 0xDC00)
 	} 
 	if (code > 0xFF) {
-		const chars = _utf32to8(code)
+		const chars = utf32to8(code)
 		return chars[0]
 	}
 	return Math.min(255, code)

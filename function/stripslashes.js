@@ -7,7 +7,6 @@
  * @param string s
  * @return string
  */
-//s.replace(/(["'\\])/g, '\\$1')
 const stripslashes = (s)=>s.replace(/(\\)(.)?/, (s_,c1,c2)=>c2||"")
 
 module.exports = {stripslashes}

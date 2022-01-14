@@ -8,7 +8,8 @@
  * @param int levels
  * @return string
  */
-const path = require("path")
+const path = require("path");
+
 const dirname = (filepath, levels=1)=>{
 	while(--levels >= 0) {
 		filepath = path.dirname(filepath)

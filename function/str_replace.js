@@ -19,22 +19,6 @@ const str_replace = (search, replace, s)=>{
 		return dst
 	}
 	if (Array.isArray(search)) {
-		/*
-		let dst = "";
-		for (let i=0,len=s.length; i<len; i++) {
-			const index = search.findIndex((s_)=>{
-				if (s_ === "") return true;
-				return (len - i >= s_.length && s.substr(i,s_.length) === s_);
-			});
-			if (index >= 0) {
-				dst += (Array.isArray(replace) ? (replace[index] || "") : replace);
-				i += (search[index].length - 1)
-			} else {
-				dst += s[i]
-			}
-		}
-		return dst
-		*/
 		search.forEach((s_, index) => {
 			const r = (Array.isArray(replace) ? (replace[index] || "") : replace);
 			s = s.split(s_).join(r)

@@ -8,8 +8,10 @@
  * @param int mode
  * @return int
  */
-const COUNT_NORMAL    = 0
-const COUNT_RECURSIVE = 1
+const {
+	COUNT_NORMAL, 
+	COUNT_RECURSIVE,
+} = require('../lib/const');
 
 const count = (value, mode=COUNT_NORMAL)=>{
 	if (typeof value === 'object') {

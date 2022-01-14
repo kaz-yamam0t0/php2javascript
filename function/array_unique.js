@@ -15,10 +15,13 @@
  * SORT_STRING        : compare items as strings
  * SORT_LOCALE_STRING : compare items as strings, based on the current locale. (ignored)
  */
-const SORT_REGULAR       = 0
-const SORT_NUMERIC       = 1
-const SORT_STRING        = 2
-const SORT_LOCALE_STRING = 5 // ignored
+const {
+	SORT_REGULAR, 
+	SORT_NUMERIC, 
+	SORT_STRING, 
+	SORT_LOCALE_STRING,
+} = require('../lib/const');
+
 
 const array_unique = (ar, flags=SORT_STRING)=>{
 	/*

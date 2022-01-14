@@ -24,16 +24,18 @@
  * ENT_XHTML      : Handle code as XHTML.
  * ENT_HTML5      : Handle code as HTML 5.
  */
-const ENT_COMPAT     = 2
-const ENT_QUOTES     = 3
-const ENT_NOQUOTES   = 0
-const ENT_IGNORE     = 4
-const ENT_DISALLOWED = 128
-const ENT_SUBSTITUTE = 8
-const ENT_HTML401    = 0
-const ENT_XML1       = 16
-const ENT_XHTML      = 32
-const ENT_HTML5      = 48
+const {
+	ENT_COMPAT, 
+	ENT_QUOTES, 
+	ENT_NOQUOTES, 
+	ENT_IGNORE, 
+	ENT_DISALLOWED, 
+	ENT_SUBSTITUTE, 
+	ENT_HTML401, 
+	ENT_XML1, 
+	ENT_XHTML, 
+	ENT_HTML5,
+} = require('../lib/const');
 
 /**
  * You can find html tables in the following page.

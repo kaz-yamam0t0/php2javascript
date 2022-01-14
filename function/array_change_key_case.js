@@ -8,12 +8,12 @@
  * @param int case
  * @return array
  */
-/**
- * CASE_UPPER : 
- * CASE_LOWER : 
- */
-const CASE_UPPER = 0
-const CASE_LOWER = 1
+const {
+	CASE_UPPER, 
+	CASE_LOWER, 
+} = require('../lib/const');
+
+
 
 const array_change_key_case = (ar, case_flg=CASE_LOWER)=>{
 	if (typeof ar !== "object" || ar === null) {

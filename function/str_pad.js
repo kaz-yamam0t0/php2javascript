@@ -15,9 +15,11 @@
  * STR_PAD_LEFT  : undefined
  * STR_PAD_BOTH  : undefined
  */
-const STR_PAD_RIGHT = 1
-const STR_PAD_LEFT  = 0
-const STR_PAD_BOTH  = 2
+const {
+	STR_PAD_RIGHT, 
+	STR_PAD_LEFT, 
+	STR_PAD_BOTH,
+} = require('../lib/const');
 
 const str_pad = (s, len, pad_string=" ", pad_type=STR_PAD_RIGHT)=>{
 	if (s.length >= len) 

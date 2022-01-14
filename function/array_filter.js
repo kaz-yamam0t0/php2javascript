@@ -13,8 +13,12 @@
  * ARRAY_FILTER_USE_KEY  : pass key as the only argument to callback instead of the value
  * ARRAY_FILTER_USE_BOTH : pass both value and key as arguments to callback instead of the value
  */
-const ARRAY_FILTER_USE_KEY  = 2
-const ARRAY_FILTER_USE_BOTH = 1
+const {
+	ARRAY_FILTER_USE_KEY, 
+	ARRAY_FILTER_USE_BOTH, 
+} = require('../lib/const');
+
+
 
 const array_filter = (ar, callback=null, mode=0)=>{
 	if (typeof ar !== "object") {

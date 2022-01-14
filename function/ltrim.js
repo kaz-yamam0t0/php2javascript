@@ -12,12 +12,9 @@
  * @param string characters
  * @return string
  */
- const _utf32to8 = (c)=>{
-	if (c <= 0xFF)   return [c]
-	if (c <= 0x7FF)  return [ (0xC0 | (c>>6)), (0x80 | (c&0x3F)) ]
-	if (c <= 0xFFFF) return [ (0xE0 | (c>>12)), (0x80 | ((c>>6)&0x3F) ), (0x80 | (c&0x3F)),]
-	                 return [ (0xF0 | (c>>18)), (0x80 | ((c>>12)&0x3F)), (0x80 | ((c>>6)&0x3F) ), (0x80 | (c&0x3F)), ]
-}
+
+const { utf32to8 } = require('../lib/util');
+
 
 const ltrim = (s, characters=" \n\r\t\v\0")=>{
 	let dst = "";
@@ -30,7 +27,7 @@ const ltrim = (s, characters=" \n\r\t\v\0")=>{
 			let low_ = characters.charCodeAt(++i);
 			code = 0x10000 + (code - 0xD800)*0x400 + (low_ - 0xDC00)
 		}
-		_utf32to8(code).forEach(c=>chars.push(c))
+		utf32to8(code).forEach(c=>chars.push(c))
 	}
 	
 	for (let i=0, len=chars.length; i<len; i++) {
@@ -70,7 +67,7 @@ const ltrim = (s, characters=" \n\r\t\v\0")=>{
 		}
 
 		//const code = s.charCodeAt(i);
-		const _chars = _utf32to8(code)
+		const _chars = utf32to8(code)
 		if (! _chars.some((_c)=>flags[_c])) {
 			if (left_flg == false) {
 				if (buf) {

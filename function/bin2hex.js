@@ -7,12 +7,7 @@
  * @param string s
  * @return string
  */
-const _utf32to8 = (c)=>{
-	if (c <= 0xFF)   return [c]
-	if (c <= 0x7FF)  return [ (0xC0 | (c>>6)), (0x80 | (c&0x3F)) ]
-	if (c <= 0xFFFF) return [ (0xE0 | (c>>12)), (0x80 | ((c>>6)&0x3F) ), (0x80 | (c&0x3F)),]
-	                 return [ (0xF0 | (c>>18)), (0x80 | ((c>>12)&0x3F)), (0x80 | ((c>>6)&0x3F) ), (0x80 | (c&0x3F)), ]
-}
+const { utf32to8 } = require('../lib/util');
 
 const bin2hex = (s)=>{
 	let dst = ""
@@ -28,12 +23,12 @@ const bin2hex = (s)=>{
 		if (len > i+1 && 0xD800 <= code && code <= 0xDC00) {
 			let low_ = s.charCodeAt(++i);
 			code = 0x10000 + (code - 0xD800)*0x400 + (low_ - 0xDC00)
-			_utf32to8(code).forEach((c_)=>{
+			utf32to8(code).forEach((c_)=>{
 				add_(c_)
 			})
 		} else {
 			if (code > 0xFF) {
-				_utf32to8(code).forEach((c_)=>{
+				utf32to8(code).forEach((c_)=>{
 					add_(c_)
 				})
 			} else {
