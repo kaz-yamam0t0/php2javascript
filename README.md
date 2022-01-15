@@ -51,8 +51,12 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 * ucfirst
 * ucwords
 * htmlspecialchars
+* htmlspecialchars_decode
 * nl2br
 * strip_tags
+* htmlentities
+* html_entity_decode
+* get_html_translation_table
 * count_chars
 * bin2hex
 * hex2bin

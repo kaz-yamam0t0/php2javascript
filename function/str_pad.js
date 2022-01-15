@@ -10,11 +10,6 @@
  * @param int pad_type
  * @return string
  */
-/**
- * STR_PAD_RIGHT : undefined
- * STR_PAD_LEFT  : undefined
- * STR_PAD_BOTH  : undefined
- */
 const {
 	STR_PAD_RIGHT, 
 	STR_PAD_LEFT, 

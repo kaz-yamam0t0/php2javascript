@@ -7,7 +7,7 @@
  * @param string character
  * @return int
  */
- const { utf32to8 } = require('../lib/util');
+const { utf32to8 } = require('../lib/util');
 
 
 const ord = (c)=>{
