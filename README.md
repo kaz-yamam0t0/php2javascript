@@ -5,14 +5,16 @@ Javascript equivalent to PHP functions
 
 ```javascript
 // import functions
-const { strtotime } = require("./function/strtotime");
-const { date } = require("./function/date");
+const { strtotime, date } = require("php2javascript");
+//const { strtotime } = require("php2javascript/function/strtotime");
+//const { date } = require("php2javascript/function/date");
 
 console.log(date('Y-m-d H:i:s', strtotime("1/14/2021 12:23:34"))); // 2021-01-14 12:23:34
 console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-14 12:20:49
 ```
 
 ## Supported Functions
+
 #### strings
 
 * addcslashes
@@ -133,3 +135,11 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 ## Standalone Functions
 
 [php2js](https://web-ninja21.com/php2js/)
+
+## NPM
+
+[php2javascript](https://www.npmjs.com/package/php2javascript)
+
+## Github
+
+[php2javascript](https://github.com/kaz-yamam0t0/php2javascript)

@@ -3,15 +3,8 @@
   "version": "1.0.0",
   "description": "Javascript equivalent to PHP functions",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaz-yamam0t0/php2javascript.git"
   },
   "keywords": [
     "php",
@@ -19,9 +12,6 @@
   ],
   "author": "kaz-yamam0t0 <yamam0t0.8202008@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kaz-yamam0t0/php2javascript/issues"
-  },
   "homepage": "https://github.com/kaz-yamam0t0/php2javascript#readme",
   "devDependencies": {
     "jest": "^27.4.7"
