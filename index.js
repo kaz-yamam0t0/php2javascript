@@ -17,6 +17,7 @@ module.exports = {
 	str_pad : require("./function/str_pad").str_pad,
 	str_replace : require("./function/str_replace").str_replace,
 	str_ireplace : require("./function/str_ireplace").str_ireplace,
+	wordwrap : require("./function/wordwrap").wordwrap,
 	sprintf : require("./function/sprintf").sprintf,
 	vsprintf : require("./function/vsprintf").vsprintf,
 	addcslashes : require("./function/addcslashes").addcslashes,

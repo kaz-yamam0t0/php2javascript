@@ -13,60 +13,60 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 ```
 
 ## Supported Functions
-
 #### strings
 
-* strlen
-* substr
-* strpos
-* stripos
-* str_contains
-* strstr
-* stristr
-* str_starts_with
-* str_ends_with
-* strrchr
-* strcmp
-* strncmp
-* strcasecmp
-* strncasecmp
-* str_repeat
-* str_pad
-* str_replace
-* str_ireplace
-* sprintf
-* vsprintf
 * addcslashes
 * addslashes
-* stripslashes
-* stripcslashes
+* bin2hex
+* chop (the alias of "rtrim")
 * chr
-* ord
-* trim
-* ltrim
-* rtrim
-* strtolower
-* strtoupper
-* lcfirst
-* ucfirst
-* ucwords
+* count_chars
+* explode
+* get_html_translation_table
+* hex2bin
+* html_entity_decode
+* htmlentities
 * htmlspecialchars
 * htmlspecialchars_decode
-* nl2br
-* strip_tags
-* htmlentities
-* html_entity_decode
-* get_html_translation_table
-* count_chars
-* bin2hex
-* hex2bin
-* number_format
 * implode
-* explode
-* chop (the alias of "rtrim")
-* strchr (the alias of "strstr")
 * join (the alias of "implode")
+* lcfirst
+* ltrim
+* nl2br
+* number_format
+* ord
 * parse_str
+* rtrim
+* sprintf
+* str_contains
+* str_ends_with
+* str_ireplace
+* str_pad
+* str_repeat
+* str_replace
+* str_starts_with
+* strcasecmp
+* strchr (the alias of "strstr")
+* strcmp
+* strip_tags
+* stripcslashes
+* stripos
+* stripslashes
+* stristr
+* strlen
+* strncasecmp
+* strncmp
+* strpos
+* strrchr
+* strstr
+* strtolower
+* strtoupper
+* substr
+* trim
+* ucfirst
+* ucwords
+* vsprintf
+* wordwrap
 
 #### filesystem
 
@@ -75,48 +75,48 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 
 #### array
 
-* count
-* in_array
-* array_keys
-* array_values
-* array_key_exists
-* array_shift
-* array_pop
-* array_unshift
-* array_push
-* array_slice
-* array_splice
+* array_change_key_case
 * array_chunk
-* array_search
-* array_map
 * array_filter
+* array_key_exists
+* array_keys
+* array_map
 * array_merge
 * array_merge_recursive
+* array_pop
+* array_push
+* array_search
+* array_shift
+* array_slice
+* array_splice
+* array_sum
 * array_unique
-* sort
+* array_unshift
+* array_values
+* count
+* in_array
+* natcasesort
+* natsort
+* range
 * rsort
 * shuffle
-* usort
-* range
-* array_sum
-* array_change_key_case
-* natsort
-* natcasesort
 * sizeof (the alias of "count")
+* sort
+* usort
 
 #### ctype
 
 * ctype_alnum
 * ctype_alpha
-* ctype_lower
-* ctype_upper
+* ctype_cntrl
 * ctype_digit
-* ctype_xdigit
-* ctype_space
+* ctype_graph
+* ctype_lower
 * ctype_print
 * ctype_punct
-* ctype_cntrl
-* ctype_graph
+* ctype_space
+* ctype_upper
+* ctype_xdigit
 
 #### datetime
 
@@ -125,10 +125,10 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 
 #### url
 
-* urlencode
-* urldecode
-* rawurlencode
 * rawurldecode
+* rawurlencode
+* urldecode
+* urlencode
 
 ## Standalone Functions
 
