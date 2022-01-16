@@ -134,12 +134,12 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 
 ## Standalone Functions
 
-[php2js](https://web-ninja21.com/php2js/)
+https://web-ninja21.com/php2js/
 
 ## NPM
 
-[php2javascript](https://www.npmjs.com/package/php2javascript)
+https://www.npmjs.com/package/php2javascript
 
 ## Github
 
-[php2javascript](https://github.com/kaz-yamam0t0/php2javascript)
+https://github.com/kaz-yamam0t0/php2javascript
