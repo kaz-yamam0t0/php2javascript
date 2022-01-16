@@ -1,4 +1,3 @@
-const { getConsoleOutput } = require("@jest/console")
 
 /** 
  * Javascript equivalent to php `count_chars`
