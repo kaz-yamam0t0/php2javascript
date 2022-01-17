@@ -94,5 +94,7 @@ module.exports = {
 	urldecode : require("./function/urldecode").urldecode,
 	rawurlencode : require("./function/rawurlencode").rawurlencode,
 	rawurldecode : require("./function/rawurldecode").rawurldecode,
+	base64_encode : require("./function/base64_encode").base64_encode,
+	base64_decode : require("./function/base64_decode").base64_decode,
 	...require("./lib/const"),
  }

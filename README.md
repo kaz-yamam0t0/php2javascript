@@ -127,6 +127,8 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 
 #### url
 
+* base64_decode
+* base64_encode
 * rawurldecode
 * rawurlencode
 * urldecode
