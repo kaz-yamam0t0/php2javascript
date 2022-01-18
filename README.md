@@ -22,6 +22,7 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 * bin2hex
 * chop (the alias of "rtrim")
 * chr
+* chunk_split
 * count_chars
 * explode
 * get_html_translation_table
@@ -34,6 +35,7 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 * join (the alias of "implode")
 * lcfirst
 * ltrim
+* md5
 * nl2br
 * number_format
 * ord
