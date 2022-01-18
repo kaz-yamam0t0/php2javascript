@@ -97,5 +97,6 @@ module.exports = {
 	base64_encode : require("./function/base64_encode").base64_encode,
 	base64_decode : require("./function/base64_decode").base64_decode,
 	http_build_query : require("./function/http_build_query").http_build_query,
+	parse_url : require("./function/parse_url").parse_url,
 	...require("./lib/const"),
  }
