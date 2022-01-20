@@ -126,6 +126,8 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 
 * checkdate
 * date
+* date_create
+* date_diff
 * date_isodate_set
 * date_parse
 * getdate

@@ -101,6 +101,8 @@ module.exports = {
 	idate : require("./function/idate").idate,
 	checkdate : require("./function/checkdate").checkdate,
 	date_isodate_set : require("./function/date_isodate_set").date_isodate_set,
+	date_create : require("./function/date_create").date_create,
+	date_diff : require("./function/date_diff").date_diff,
 	urlencode : require("./function/urlencode").urlencode,
 	urldecode : require("./function/urldecode").urldecode,
 	rawurlencode : require("./function/rawurlencode").rawurlencode,

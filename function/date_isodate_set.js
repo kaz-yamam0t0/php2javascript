@@ -4,8 +4,11 @@
  * Alias of DateTime::setISODate
  * @see https://www.php.net/manual/en/function.date-isodate-set.php
  * 
- * @param void
- * @return void
+ * @param Date d
+ * @param int year
+ * @param int week=1
+ * @param int day_of_week=1
+ * @return Date
  */
 const {
 	iso8601_first_date,
