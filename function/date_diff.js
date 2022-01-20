@@ -7,7 +7,7 @@
  * @param Date d
  * @param Date target_d
  * @param bool absolute_flg = false
- * @return int (unixtime. originally returns a DateInterval instance)
+ * @return int (seconds. originally returns a DateInterval instance)
  */
 
 const date_diff = (d, target_d, absolute_flg)=>{
