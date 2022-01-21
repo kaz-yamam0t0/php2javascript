@@ -1,13 +1,22 @@
 # php2javascript
 Javascript equivalent to PHP functions
 
+## Installation
+
+```shell
+$ npm i -g npm
+$ npm i --save php2javascript
+```
+
 ## Usage
 
 ```javascript
 // import functions
 const { strtotime, date } = require("php2javascript");
-//const { strtotime } = require("php2javascript/function/strtotime");
-//const { date } = require("php2javascript/function/date");
+
+// each function can be imported like this:
+// const { strtotime } = require("php2javascript/function/strtotime");
+// const { date } = require("php2javascript/function/date");
 
 console.log(date('Y-m-d H:i:s', strtotime("1/14/2021 12:23:34"))); // 2021-01-14 12:23:34
 console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-14 12:20:49
