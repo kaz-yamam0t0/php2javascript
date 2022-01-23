@@ -27,6 +27,9 @@ test("test strtotime()", ()=>{
 	expect(strtotime("+1 day 2 week 3 months -4 years 5 hours -6 minutes 7 seconds",1640769840)).toStrictEqual(1523629087) // 2018-04-13 14:18:07
 	expect(strtotime("-1year -13 months -8week",1640769840)).toStrictEqual(1570181040) // 2019-10-04 09:24:00
 
+	expect(strtotime("1year ago",1640769840)).toStrictEqual(1609233840) // 2020-12-29 09:24:00
+	expect(strtotime("P1Y",1640769840)).toStrictEqual(1672305840) // 2022-12-29 09:24:00
+
 	// php `strtotime` seems not to do well with "next" or "prev" format and timezone.
 	// expect(strtotime("next Thursday",1640769840)).toStrictEqual(1640790000) // 2021-12-29 15:00:00
 	// expect(strtotime("last Monday",1640769840)).toStrictEqual(1640530800) // 2021-12-26 15:00:00
