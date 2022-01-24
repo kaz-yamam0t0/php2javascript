@@ -108,6 +108,8 @@ module.exports = {
 	date_modify : require("./function/date_modify").date_modify,
 	date_date_set : require("./function/date_date_set").date_date_set,
 	date_format : require("./function/date_format").date_format,
+	date_parse_from_format : require("./function/date_parse_from_format").date_parse_from_format,
+	date_create_from_format : require("./function/date_create_from_format").date_create_from_format,
 	urlencode : require("./function/urlencode").urlencode,
 	urldecode : require("./function/urldecode").urldecode,
 	rawurlencode : require("./function/rawurlencode").rawurlencode,
