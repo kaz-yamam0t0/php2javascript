@@ -137,12 +137,14 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 * date
 * date_add
 * date_create
+* date_create_from_format
 * date_date_set
 * date_diff
 * date_format
 * date_isodate_set
 * date_modify
 * date_parse
+* date_parse_from_format
 * date_sub
 * getdate
 * idate
@@ -163,7 +165,7 @@ console.log(date('Y-m-d H:i:s', strtotime("+1 month", new Date()))); // 2022-02-
 * urldecode
 * urlencode
 
-## Standalone Functions
+## Functions
 
 https://web-ninja21.com/php2js/
 
